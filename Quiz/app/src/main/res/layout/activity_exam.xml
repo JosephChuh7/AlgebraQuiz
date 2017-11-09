@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.joseph.quiz.ExamActivity">
+
+    <TextView
+        android:id="@+id/tv_disp_equation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:textSize="30sp"
+        android:text="AX+B=0"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_disp_correctness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tv_disp_equation"
+        android:textSize="26sp"
+        android:text="Correct!"/>
+
+    <LinearLayout
+        android:id="@+id/ll_correct_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/tv_disp_correctness"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        >
+
+
+        <TextView
+            android:id="@+id/tv_correct_ans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text=""
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_next_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Next Question"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/btn_bkgnd"
+        android:textColor="@color/text_color"
+        />
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_above="@+id/btn_next_question"
+        android:text="Submit"
+        android:background="@color/btn_bkgnd"
+        android:layout_marginBottom="13dp"
+        android:textColor="@color/text_color"
+        />
+
+
+        <EditText
+            android:id="@+id/et_ans_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_above="@id/btn_submit"
+            android:layout_marginBottom="13dp"
+            android:background="@drawable/et_border"
+            android:hint="Answer 2"
+            />
+    <EditText
+        android:id="@+id/et_ans_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_above="@id/et_ans_2"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/et_border"
+        android:hint="Answer 1"
+        />
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

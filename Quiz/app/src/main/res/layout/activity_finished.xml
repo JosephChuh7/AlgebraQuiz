@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.joseph.quiz.FinishedActivity">
+
+        <TextView
+            android:id="@+id/wd_time_usage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Time Usage"
+            android:layout_marginTop="55dp"
+            android:textSize="18sp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:id="@+id/tv_time_usage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/wd_time_usage"
+            android:textSize="30sp"
+            android:layout_marginTop="12dp"
+            android:text="3'20"
+            />
+
+
+    <TableLayout
+        android:id="@+id/tb_num_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+
+
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="15dp"
+
+        android:stretchColumns="1,2"
+        >
+
+        <TableRow>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:textSize="13sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Linear  "
+                    android:textStyle="bold"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:textSize="13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quadratic"
+                android:textStyle="bold"/>
+            </RelativeLayout>
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:textSize="13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Correct      "
+                android:textStyle="bold"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/tv_li_cor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/tv_qu_cor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            </RelativeLayout>
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Wrong      "
+                android:textStyle="bold"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/tv_li_wro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/tv_qu_wro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            </RelativeLayout>
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Give up      "
+                android:textStyle="bold"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/tv_li_giveup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/tv_qu_giveup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            </RelativeLayout>
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Avg Time"
+                android:textStyle="bold"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/tv_li_avg_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/tv_qu_avg_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            </RelativeLayout>
+
+        </TableRow>
+    </TableLayout>
+
+
+    <Button
+        android:id="@+id/btn_quiz_agian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_above="@+id/btn_back_home"
+        android:layout_marginBottom="13dp"
+        android:text="Do Quiz Agian"
+        android:background="@color/btn_bkgnd"
+        android:textColor="@color/text_color"
+        />
+
+    <Button
+        android:id="@+id/btn_back_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        android:text="Back to Homepage"
+        android:background="@color/btn_bkgnd"
+        android:textColor="@color/text_color"
+        android:layout_marginBottom="13dp"
+
+        />
+</RelativeLayout>
